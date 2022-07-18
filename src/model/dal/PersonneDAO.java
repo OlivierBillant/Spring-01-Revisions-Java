@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import model.bo.Personne; 
 public class PersonneDAO {
 
-	public void add(Personne personne, ArrayList<Personne> annuaire) {
+	public void insert(Personne personne, ArrayList<Personne> annuaire) {
 		annuaire.add(personne);
 	}
 	public void showAll(ArrayList<Personne> annuaire) {

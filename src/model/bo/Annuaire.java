@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import model.bo.Personne;
 
 public class Annuaire {
-	private ArrayList<Personne> annuaire;
+	private ArrayList<Personne> annuaire = new ArrayList<Personne>();
 
 	public Annuaire(ArrayList<Personne> annuaire) {
 		super();

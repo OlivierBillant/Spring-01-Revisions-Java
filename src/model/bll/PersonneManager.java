@@ -9,7 +9,7 @@ public class PersonneManager {
 private PersonneDAO personneDAO = new PersonneDAO();
 
 	public void ajouterContact(Personne personne, ArrayList<Personne> annuaire) {
-		personneDAO.add(personne, annuaire);
+		personneDAO.insert(personne, annuaire);
 	}
 	public void afficherTousContact(ArrayList<Personne> annuaire) {
 		personneDAO.showAll(annuaire);
