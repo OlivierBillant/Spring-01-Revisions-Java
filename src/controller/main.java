@@ -27,6 +27,12 @@ public class main {
 		personneManager.ajouterContact(personne2, annuaire);
 		personneManager.ajouterContact(personne3, annuaire);
 		personneManager.ajouterContact(personne4, annuaire);
+		System.out.println("Test affichage tous contacts");
+		personneManager.afficherTousContact(annuaire);
+		System.out.println("Test affichage un contact");
+		personneManager.afficherUnContact(2, annuaire);
+		System.out.println("Test effacer un contact");
+		personneManager.effacerUnContact(0, annuaire);
 		personneManager.afficherTousContact(annuaire);
 		
 //		ArrayList<Personne> annuaireTest = new ArrayList<Personne>();

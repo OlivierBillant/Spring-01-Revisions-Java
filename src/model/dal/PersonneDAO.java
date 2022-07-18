@@ -3,18 +3,12 @@ package model.dal;
 import java.util.ArrayList;
 
 import model.bo.Personne; 
-public class PersonneDAO {
+public interface PersonneDAO {
 
-	public void insert(Personne personne, ArrayList<Personne> annuaire) {
-		annuaire.add(personne);
-	}
-	public void showAll(ArrayList<Personne> annuaire) {
-		for (Personne personne : annuaire) {
-			System.out.println(personne);
-		}
-	}
-	public void showById(int id) {}
-	public void delete(int id) {}
-	public void update(Personne personne) {}
+	public void insert(Personne personne, ArrayList<Personne> annuaire);
+	public void showAll(ArrayList<Personne> annuaire);
+	public void showById(int id, ArrayList<Personne> annuaire);
+	public void delete(int id, ArrayList<Personne> annuaire);
+	public void update(Personne personne);
 	
 }
